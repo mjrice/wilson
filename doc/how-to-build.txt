@@ -1,0 +1,41 @@
+--------------------------------------------
+How to Assemble the Reprap Wilson 3D printer
+Written by Martin Rice <mrice411@gmail.com>
+--------------------------------------------
+
+1. Identify the components
+
+2. Assemble the Y axis (part 1)
+
+	The following parts are used during this step:
+
+	a. The two M10 threaded rods
+	b. The Y axis smooth rods
+	c. The plastic Y end pieces (2)
+	d. The two plastic frame brace supports
+	e. 12 M10 nuts and washers
+	f. Four linear bearings (LM8UU)
+
+3. Assemble the Frame (part 1)
+
+	The following parts are used during this step:
+
+	a. The two side pieces of 2020 aluminum extrusion (the longer ones, generally)
+	b. One of the two horizontal pieces of 2020 aluminum extrusion (the shorter ones, generally)
+	c. 36 T-slot nuts
+	d. 28 M5 x 8mm screws
+	e. The plastic Z motor holders (2)
+	f. The plastic rear frame brackets (2)
+
+4. Mount the Y axis to the frame
+
+5. Assemble the X axis (part 1)
+
+6. Mounting the X axis to the Z axis
+
+7. Assemble the Frame (part 2)
+
+
+
+
+
