@@ -7,8 +7,7 @@ Written by Martin Rice <mrice411@gmail.com>
 
 2. Assemble the Y axis (part 1)
 
-	The following parts are used during this step:
-
+2.1	The following parts are used during this step:
 	a. The two M10 threaded rods
 	b. The Y axis smooth rods
 	c. The plastic Y end pieces (2)
@@ -18,8 +17,7 @@ Written by Martin Rice <mrice411@gmail.com>
 
 3. Assemble the Frame (part 1)
 
-	The following parts are used during this step:
-
+3.1	The following parts are used during this step:
 	a. The two side pieces of 2020 aluminum extrusion (the longer ones, generally)
 	b. One of the two horizontal pieces of 2020 aluminum extrusion (the shorter ones, generally)
 	c. 36 T-slot nuts
@@ -29,13 +27,22 @@ Written by Martin Rice <mrice411@gmail.com>
 
 4. Mount the Y axis to the frame
 
+4.1	The following parts are used during this step:
+	a. The partially-assembled Y axis from step 2.
+	b. The partially assembled frame from step 3.
+	c. Eight M5 x 8mm screws
+
+
 5. Assemble the X axis (part 1)
+
+5.1	The following parts are used during this step:
+	a. The two plastic X end pieces ("motor" and "idler")
+	b. Eight linear bearings (LM8UU)
+	c. The two X axis smooth rods
 
 6. Mounting the X axis to the Z axis
 
 7. Assemble the Frame (part 2)
-
-
 
 
 
