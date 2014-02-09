@@ -11,4 +11,11 @@ The main goals of Wilson are:
 2. To make the build volume parametric (easy to scale up or down by 50%).
 3. To simplify construction of the printer by reducing vitamins.
 
+The repository has these parts:
+
+1. The STL files needed to build the printer.
+2. Documentation section where instructions and parts-list can be found.
+3. Some parts have corresponding OpenSCAD models which are kept in the scad folder.
+4. Various images of the printer/build process are in the images folder.
+
 
