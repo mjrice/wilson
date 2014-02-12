@@ -28,11 +28,14 @@ Written by Martin Rice <mrice411@gmail.com>
 		the	extruder along the X-axis (left to right).  The X and Y axis are
 		belt driven, by one stepper motor each that is mounted at one end of 
 		the respective axis (these are called the "motor ends").  At the 
-		opposite end of each axis is an idler bearing which keeps tension on
-		each belt (these are called the "idler ends").  
+		opposite end of each axis is a bearing which keeps tension on each 
+		belt (these are called the "idler ends").  
 
 		The entire X-axis assembly is moved along the Z-axis (up and down) by 
-		two separate (but identically controlled) motors.
+		two separate (but identically controlled) motors.  The Z-axis is not 
+		belt driven but rather uses screws (generally M5 threaded rods) which 
+		turn against a fixed nut at each end of the X-axis to provide 
+		positioning.
 		
 		Limit switches located at one end or the other of each axis are used 
 		by the printer firmware to "home" the extruder at the beginning of a
