@@ -7,9 +7,39 @@
 
 use <x-end.scad>
 
+offs_adjuster_y = 5.5;
+adj_block_x = 12;
+adj_block_y = 10;
+adj_block_z = 32;
+
+module adjustomatic() {
+
+   difference() {     
+       translate(v=[-(15+17/2+adj_block_x/2),offs_adjuster_y,58-adj_block_z/2]) 
+          cube(size=[adj_block_x,adj_block_y,adj_block_z],center=true);
+       
+       translate(v=[-(15+17/2+adj_block_x/2)-5,offs_adjuster_y,58-adj_block_z/2-8]) 
+         rotate([0,-30,0]) cube(size=[adj_block_x,adj_block_y+2,adj_block_z],center=true);
+
+       translate(v=[-(15+17/2+adj_block_x/2-1),offs_adjuster_y,58-adj_block_z/2-3]) 
+          cube(size=[adj_block_x,adj_block_y-2,adj_block_z-2],center=true);
+
+       translate(v=[-(15+17/2+adj_block_x/2),offs_adjuster_y,58-adj_block_z/2+14]) 
+           {
+         rotate([0,0,30]) #cylinder(h = 4, r=3.1, $fn = 6);
+         translate([0,0,-20]) #cylinder(h=30,r=2,$fn=16);
+}
+
+   }
+
+}
+
 module x_end_motor_base(){
  x_end_base();
+ // motor arm
  translate(v=[-15,31,26.5]) cube(size = [17,44,53], center = true);
+ // z stop adjuster
+ adjustomatic();
 }
 
 module x_end_motor_holes(){
