@@ -4,6 +4,7 @@
 // Josef Průša <iam@josefprusa.cz> and contributors
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://prusamendel.org
+// Alterations for Wilson by MRice <mrice411@gmail.com>
 
 bearing_diameter = 15;
 
