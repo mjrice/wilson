@@ -89,7 +89,7 @@ Set the prepared wood print bed aside.
 		generally)
 	b.	One of the two horizontal pieces of 2020 aluminum extrusion (the 
 		shorter ones, generally)
-	c.	22 T-slot nuts
+	c.	23 T-slot nuts
 	d.	14 M5 x 8mm screws
 	e.	The plastic Z motor holders (2)
 	f.	The plastic rear frame brackets (2) 
@@ -114,8 +114,12 @@ Set the prepared wood print bed aside.
 	on your work surface.
 *	Slide two more T nuts into each side piece and attach the motor mounts 
 	the same way you did the rear brackets, using 6 more M5 screws.
+*	Slide one more T nut into the outer side of the left upright piece from
+	the top.  This nut will be used later to attach the Z axis endstop 
+	mount.
 *	You should have four T nuts sliding around between the lower corners, 
 	which will be used to attach the Y axis to the frame in the next step.
+
 
 3. Mount the Y axis to the frame
 
@@ -282,14 +286,14 @@ Set the prepared wood print bed aside.
 	surface (where you will attach the extruder) toward the front of the
 	printer (the Y idler end).
 	
-8.	Attach Belts
+7.4	Attach Belts
 
 *	You will need:
 
 	a.	The X axis drive belt.
 	b.	The Y axis drive belt.
 	c.	The Y belt holder.
-	d.	Two M3 x 14mm screws and nuts.
+	d.	Two M3 x 20mm screws and nuts.
 	e.	8 Miniature zip ties.
 
 *	Thread the X axis belt into place and secure with four zip ties (two
@@ -301,6 +305,67 @@ Set the prepared wood print bed aside.
 	holder should be approximately in the middle of the wood print bed.
 *	Mark the holes for the Y belt holder, then set the holder and belt 
 	aside and drill the two holes with a 4-5mm hand drill.  
+*	Attach the Y belt holder with the head of the screws to the bottom,
+	with a washer and nut on the wood side.  
 
+7.5	Attach accessory mounts
+
+*	You will need:
+	a.	Filament holder mounts
+	b.	SMART display mounts
+	c.	M5 x 8mm screws
+
+
+7.6	Attach heat bed
+
+*	You will need:
+
+	a.	The heat bed circuitboard
+	b.	Four M3 x 25mm screws and locknuts
+	c.	Four springs (optional, use four additional M3 nuts if not)
+
+* 	This is a good time to attach the heat bed thermistor if you have not
+	already done so.  Depending on your heat bed and thermistor, the most
+	likely procedure here is to secure the thermistor to the middle of the
+	bottom-side of the heat bed with a strip of Kapton tape.  
+*	Attach the heat bed with a screw through each corner, with the head of
+	the screw up, down through the heat bed, through a spring (or M3 nut), 
+	through the wood print bed, and into a lock nut.  
+
+7.7	Attach Limit Switches
+
+*	You will need:
+
+	a.	Three micro limit switches
+	b.	The Z axis limit switch mount
+	c.	M2 x 16mm screws and nuts as needed (up to 6 each)
+
+*	If your limit switches do not already have wires attached, do that
+	now.  You will need approximately 45cm (18") of wire on each switch
+	(depending on where you locate the electronics).
+
+8.	Assemble the Extruder
+
+*	You will need:
+
+	a.	The extruder body, idler, and gear set.
+	b.	The remaining NEMA17 stepper motor.
+	c.	The M8 Hobbed bolt, two M8 nuts, and washers (probably 4).
+	d.	The hot end.
+	e.	Four M3 x 30mm screws and nuts.
+	f.	The plastic fan duct.
+	g.	The 40mm x 40mm fan.
+
+*	If your hot end was not previously assembled (heater resistor and 
+	thermistor), do that now.  Follow the instructions for your particular
+	hot end.
+
+9.	Connect the Electronics
+
+*	You will need:
+
+	a.	The electronics controller of your choice (e.g. RAMPS)
+	b.	The power supply
+	c.	SMART display (optional)
 
 
