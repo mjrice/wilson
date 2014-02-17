@@ -50,7 +50,8 @@ Written by Martin Rice <mrice411@gmail.com>
 
 1.4 Prep the Print Bed
 
-While the Y axis assembly is free, it is a good time to prepare the print bed which you will attach later.
+While the Y axis assembly is free, it is a good time to prepare the print 
+bed which you will attach later.
 
 Gather the following materials
 
@@ -73,9 +74,10 @@ Gather the following materials
 	mount with a line that is approx 10mm from the back edge of the bed.
 *	Mark all the holes for the bearing holders with a pencil.
 *	Remove the wood print bed and drill all the holes you marked with a 5mm 
-	drill bit. (You want the holes a little over-sized so that there is some 
-	room for the screws to "float" when you attach the bed).
-*	Attach the linear bearing holders to the Y axis linear bearings with zip ties.
+	drill bit. (You want the holes a little over-sized so that there is 
+	some room for the screws to "float" when you attach the bed).
+*	Attach the linear bearing holders to the Y axis linear bearings with 
+	zip ties.
 
 Set the prepared wood print bed aside.
 
@@ -233,32 +235,72 @@ Set the prepared wood print bed aside.
 	end until the threaded rods rest against the Z axis motor shafts. 
 *	Tighten the z axis couplers. 
 
-7. Mount X and Y motors
+7. Completing the Frame Assembly
 
-7.1 In addition to the frame from the previous step, you will need:
+7.1 Mount X and Y motors
+
+*	In addition to the frame from the previous step, gather the following:
 
 	a.	Two NEMA17 stepper motors
 	b.	Two belt pulleys
 	c.	The two idler bearings and mounts
 	d.	Three M3 x 10mm screws
 	e.	Three M3 x 14mm screws
-	f.	Two screws with lock nuts for mounting the belt idlers (probably M3 x 25mm) 
+	f.	Two screws with lock nuts for mounting the belt idlers (probably 
+		M3 x 25mm) 
 
-*	Mount the motors, the pulleys, the idlers.
-*	Mount the print bed you prepared earlier to the Y axis bearing holders 
-	using Eight M3 x 14mm screws and an equal number of M3 nuts and washers. 
-	The washer should go on the screw first, which should go downward 
-	through the wood print bed and bearing holder, and secured with a nut. 
-	Attach each screw only loosely first, then check that the bed slides 
-	smoothly back and forth along the Y axis. Tighten the nuts a little at 
-	a time until secure. 	
+*	Mount the motors to the X and Y axis motor mounts using three screws 
+	each.  
+*	Fit a pulley on each motor shaft and tighten the grub screws to keep 
+	them secure.
+*	Snap an idler bearing into each pair of plastic bearing guides, then
+	attach the idlers to the opposite ends of the X and Y axis from where
+	you attached the motors.  Don't overtighten the screws that hold on
+	the idlers.
 
-7.2 Attach the X carriage.
+7.2 Attach print bed
 
-You will need:
+*	You will need:
+
+	a.	The print bed you prepared earlier.
+	b.	Eight M3 x 14mm screws and an equal number of M3 nuts and washers.
+
+*	Mount the print bed to the Y axis bearing holders.	The washer should 
+	go on the screw first, which should go downward through the wood print 
+	bed and bearing holder, and secured with a nut.  Attach each screw only 
+	loosely first, then check that the bed slides smoothly back and forth 
+	along the Y axis. Tighten the nuts a little at a time until secure. 	
+
+7.3 Attach the X carriage.
+
+*	You will need:
 
 	a.	The printed X carriage
 	b.	Eight miniature zip ties 
+
+* 	Attach the X carriage with the belt guide "up" and with the flat 
+	surface (where you will attach the extruder) toward the front of the
+	printer (the Y idler end).
+	
+8.	Attach Belts
+
+*	You will need:
+
+	a.	The X axis drive belt.
+	b.	The Y axis drive belt.
+	c.	The Y belt holder.
+	d.	Two M3 x 14mm screws and nuts.
+	e.	8 Miniature zip ties.
+
+*	Thread the X axis belt into place and secure with four zip ties (two
+	on each side of the extruder, trimmed short after tight).
+*	Turn the printer over or have a friend hold it upside down, being 
+	careful not to lift by or put pressure on the X axis rods.  
+*	Thread the Y axis belt into place.  Hold the belt tight and use as a
+	guide for placing the Y belt holder.  The leading edge of the belt 
+	holder should be approximately in the middle of the wood print bed.
+*	Mark the holes for the Y belt holder, then set the holder and belt 
+	aside and drill the two holes with a 4-5mm hand drill.  
 
 
 
