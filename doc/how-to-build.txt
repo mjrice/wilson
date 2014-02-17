@@ -1,0 +1,264 @@
+Reprap Wilson Assembly Guide
+Written by Martin Rice <mrice411@gmail.com>
+
+1. Assemble the Y axis (part 1)
+
+1.1 Gather the following parts
+
+	a. The two M10 threaded rods
+	b. The Y axis smooth rods
+	c. The plastic Y end pieces (2)
+	d. The two plastic frame brace supports
+	e. 12 M10 nuts and washers
+	f. Four linear bearings (LM8UU) 
+
+1.2 Hardware Assembly
+
+*	Slide a brace support onto each threaded rod. On each side of the 
+	supports, put a washer, a nut, another nut and another washer (in 
+	that order).
+*	Next, slide two two Y end pieces over the ends of the threaded rods. 
+	Place a washer then nut on each end.
+
+1.3 Tightening the Y axis
+
+*	Start at one end (either Y motor or Y idler end) and tighten the two 
+	nuts against the end so that the threaded rod is flush with the outside 
+	of the nut. Tighten both sides of the first end while everything else 
+	is loose along the threaded rods. Use two wrenches  to tighten the nuts 
+	against the end until snug (tight, but don't compress enough to deform 
+	or break the plastic).
+*	Place two linear bearings on each Y axis smooth rod.
+*	Next, with the other Y end still loosely attached, place the two Y axis 
+	smooth rods across the top and fit into the grooves along the top of 
+	the ends.
+*	Press down on the corners (not in the middle of the rods!) to seat the 
+	rods into the Y ends.
+*	Tighten one corner of the remaining end.
+*	Now take a moment to measure with a ruler between the end posts of the 
+	tightened side. (355mm for reference).
+*	Flip the assembly around and repeat the measurement as you tighten the 
+	remaining corner (tighten it just a little first, then measure. If the 
+	distance is a little less than the first side, tighten the inner nut 
+	outward toward the outer nut, if the distance is a little more than the 
+	first side, then tighten the outer nut toward the inner one. Try to get 
+	the two sides as close to the same distance as possible. This will help 
+	ensure your y axis bearings don't experience any binding forces).
+*	Repeat the measurement on the first side and check that all corners are 
+	nice and snug. Take your time on this step, it may require a couple 
+	iterations to get the axis square. 
+
+1.4 Prep the Print Bed
+
+While the Y axis assembly is free, it is a good time to prepare the print bed which you will attach later.
+
+Gather the following materials
+
+	a.	The Y axis assembly you just completed
+	b.	The wood print bed support
+	c.	The heat bed
+	d.	The four linear bearing holders
+	e.	Eight miniature zip ties 
+
+
+*	Place the heat bed circuitboard over the wood bed and mark the four 
+	corner locations with a pencil.
+*	Put the heat bed circuitboard aside and place the four linear bearing 
+	holders over the linear bearings along the Y axis rods.
+*	Turn the Y axis assembly over so that the smooth rods (and bearing 
+	holders) are against the wood print bed surface.
+*	Align the front edge of the two bearing holders nearest the Y end idler 
+	with a line that is 80mm from the front edge of the bed.
+*	Align the back edge of the two bearing holders nearest the Y end motor 
+	mount with a line that is approx 10mm from the back edge of the bed.
+*	Mark all the holes for the bearing holders with a pencil.
+*	Remove the wood print bed and drill all the holes you marked with a 5mm 
+	drill bit. (You want the holes a little over-sized so that there is some 
+	room for the screws to "float" when you attach the bed).
+*	Attach the linear bearing holders to the Y axis linear bearings with zip ties.
+
+Set the prepared wood print bed aside.
+
+2. Assemble the Frame (part 1)
+
+2.1 Gather the following parts
+
+	a.	The two side pieces of 2020 aluminum extrusion (the longer ones, 
+		generally)
+	b.	One of the two horizontal pieces of 2020 aluminum extrusion (the 
+		shorter ones, generally)
+	c.	22 T-slot nuts
+	d.	14 M5 x 8mm screws
+	e.	The plastic Z motor holders (2)
+	f.	The plastic rear frame brackets (2) 
+
+2.2 Hardware Assembly 
+
+*	Slide 6 T-nuts into one side of the shorter extrusion (this wlll be the 
+	bottom piece of the frame).
+*	Turn the extrusion over (being careful not to let the nuts slide out 
+	that you just put in) and slide 8 more nuts into the opposite side that 
+	you begain with.
+*	Place the two remaining extrusions to the sides of the first, and slide 
+	two T nuts into each on the side facing up.
+*	Get the two corner braces and place one over each corner. Line up the 
+	two nuts on each extrusion and attach the braces with a total of 8 M5 
+	screws. Note that the longer extrusions (the "sides" of the frame) 
+	should cover the ends of the bottom extrusion piece. Leave the screws 
+	loose until all 8 are started. Stand the frame "upright" to ensure the 
+	sides are slid down flush with the bottom and alternately tighten until 
+	all the screws are tight.
+*	Rotate the frame so the other side is facing you and put it back flat 
+	on your work surface.
+*	Slide two more T nuts into each side piece and attach the motor mounts 
+	the same way you did the rear brackets, using 6 more M5 screws.
+*	You should have four T nuts sliding around between the lower corners, 
+	which will be used to attach the Y axis to the frame in the next step.
+
+3. Mount the Y axis to the frame
+
+3.1 The following parts are used during this step: 
+
+	a.	The partially-assembled Y axis from step 1. 
+	b.	The partially assembled frame from step 2. 
+	c.	Eight M5 x 8mm screws 	
+
+3.2 Mounting the Y axis
+
+*	Place the Y axis over the frame so that the Y motor end is toward the 
+	rear, and the Z motor brackets are toward the front. 	
+*	Slide the Y axis along the threaded rods so that there is ** 135mm **
+	from the Y motor end and the frame braces 	
+*	Tighten the nuts on the first side finger-tight against the frame brace 
+	then turn the assembly around and repeat on the other side. Measure a 
+	couple times to make sure the distance from the y motor end to the frame 
+	braces is the same on each corner. Next slide the Y axis assembly left 
+	or right along the lower frame extrusion so that there is ** 50mm ** 
+	from the upright extrusion to the inner edge of the frame brace on the 
+	"left" side of the printer (as viewed with the Y axis idler toward you). 	
+*	Tighten the frame braces using 8 M5 screws into the T slot nuts that 
+	are alread in the lower frame extrusion. Finish tightening the nuts of 
+	the threaded rod against the braces, double-checking that the distance 
+	from the Y end to the braces is the same on each side. A convenient 
+	place to measure this after the nuts are snug is from the inside of the 
+	nuts (approx 116mm). 	
+
+4. Assemble the X axis (part 1)
+
+4.1 Gather the following parts: 
+
+	a.	The two plastic X end pieces ("motor" and "idler") 
+	b.	Eight linear bearings (LM8UU) 
+	c.	The two X axis smooth rods 
+	d.	Two M5 nuts 	
+
+4.2 Hardware Assembly
+
+*	Press two linear bearings into each X end. 
+*	Using pliers, gently press an M5 nut into the provided insert in each 
+	end. 
+*	Place two linear bearings on each of the smooth rods. 
+*	Press each X end onto the pair of smooth rods, being sure to orient 
+	them so that the M5 nuts are on the same side of the rods. 	
+
+5. Assembling the frame (part 2)
+
+5.1 Gather the following: 
+
+	a.	The two upper Z axis mounts. 
+	b.	The remaining piece of aluminum extrusion (the top bar) 
+	c.	Four t-slot nuts 
+	d.	Five more t-slot nuts if you are going to use the filament holder 
+		and SMART electronics mount. 
+	e.	Four M5 x 8mm screws 	
+
+5.2 
+
+*	Insert two t-slot nuts into the top side of the aluminum extrusion. 
+*	If you will be using the filament holder, rotate the extrusion 90 
+	degrees and insert two more t-slot nuts into the top side. 
+*	Insert the remaining t-slot nuts into the side opposite from the one 
+	you started with. 
+
+5.3 
+
+*	Attach the upper Z axis mounts to the ends of the extrusion, tightening 
+	the M5 nuts just until snug. Be sure to keep the two t slot nuts for 
+	the filament holder on the "top" and the t slot nuts for the SMART 
+	electronics mount and filament holder to the back (side away from the 
+	rod holders).
+
+6. Mounting the X axis to the Z axis
+
+6.1 Gather the following
+
+	a.	The partialy assembled frame from step 3.
+	b.	The X axis assembly from step 4.
+	c.	The upper frame assembly from step 5.
+	d.	The remaining two smooth rods
+	e.	The Z axis threaded rods (M5)
+	f.	Two NEMA17 stepper motors
+	g.	Eight M3 x 10mm screws (washers recommended)
+	h.	Two Z axis couplers (either 5mm x 5mm couplers or 3/16" vinyl tubing)
+	i.	Eight t-slot nuts
+	j.	Eight M5 x 8mm screws 
+
+6.2 Mounting the X axis onto the frame.
+
+*	Attach the two Z axis motors to the motor mounts using four M3 x 10mm 
+	screws each. Place the z axis couplers on each motor shaft.
+*	Press each Z axis smooth rod firmly down into the rod holder of each motor 
+	mount, being careful to keep the rods straight up and down to avoid 
+	breaking the mounts.
+*	Gently slide the X axis assembly down over the Z axis rods. If the linear 
+	bearings in each X end do not align with the Z axis rods, remove the X 
+	axis assembly and gently push/pull the two ends to get the distance right. 
+	The motor end of the X axis assembly should be on your left (with the Y 
+	idler end toward you).
+*	Insert two t-slot nuts into both the front and back sides of each end (8 
+	total). You may want to hold the frame assembly on your lap with the 
+	upright extensions horizontally at the point, so that the t slot nuts 
+	don't slide down to the botttom of the frame. If they do, simply place 
+	your hands over the tops of the extrusions, keeping the z axis smooth 
+	rods supported, and tip the assembly over to slide the nuts back toward 
+	the top.
+*	Place the upper frame assembly on the frame. Fit the tops of the z axis 
+	smooth rods into the rod holders.
+*	Secure the top of the frame using 8 M5 x 8mm screws. Be sure to press 
+	the top of the frame down securely onto the vertical extrusions, and 
+	then press inward on each top corner to seat the upper extrusion against 
+	the sides.
+*	With the X axis assembly resting at the bottom of the Z axis smooth 
+	rods, thread the z axis threaded rods down through the nut in each X 
+	end until the threaded rods rest against the Z axis motor shafts. 
+*	Tighten the z axis couplers. 
+
+7. Mount X and Y motors
+
+7.1 In addition to the frame from the previous step, you will need:
+
+	a.	Two NEMA17 stepper motors
+	b.	Two belt pulleys
+	c.	The two idler bearings and mounts
+	d.	Three M3 x 10mm screws
+	e.	Three M3 x 14mm screws
+	f.	Two screws with lock nuts for mounting the belt idlers (probably M3 x 25mm) 
+
+*	Mount the motors, the pulleys, the idlers.
+*	Mount the print bed you prepared earlier to the Y axis bearing holders 
+	using Eight M3 x 14mm screws and an equal number of M3 nuts and washers. 
+	The washer should go on the screw first, which should go downward 
+	through the wood print bed and bearing holder, and secured with a nut. 
+	Attach each screw only loosely first, then check that the bed slides 
+	smoothly back and forth along the Y axis. Tighten the nuts a little at 
+	a time until secure. 	
+
+7.2 Attach the X carriage.
+
+You will need:
+
+	a.	The printed X carriage
+	b.	Eight miniature zip ties 
+
+
+
