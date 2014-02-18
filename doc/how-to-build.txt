@@ -89,7 +89,7 @@ Set the prepared wood print bed aside.
 		generally)
 	b.	One of the two horizontal pieces of 2020 aluminum extrusion (the 
 		shorter ones, generally)
-	c.	23 T-slot nuts
+	c.	22 T-slot nuts
 	d.	14 M5 x 8mm screws
 	e.	The plastic Z motor holders (2)
 	f.	The plastic rear frame brackets (2) 
@@ -114,9 +114,6 @@ Set the prepared wood print bed aside.
 	on your work surface.
 *	Slide two more T nuts into each side piece and attach the motor mounts 
 	the same way you did the rear brackets, using 6 more M5 screws.
-*	Slide one more T nut into the outer side of the left upright piece from
-	the top.  This nut will be used later to attach the Z axis endstop 
-	mount.
 *	You should have four T nuts sliding around between the lower corners, 
 	which will be used to attach the Y axis to the frame in the next step.
 
@@ -322,15 +319,17 @@ Set the prepared wood print bed aside.
 
 	a.	The heat bed circuitboard
 	b.	Four M3 x 25mm screws and locknuts
-	c.	Four springs (optional, use four additional M3 nuts if not)
+	c.	Four springs (approx 1" long uncompressed)
 
 * 	This is a good time to attach the heat bed thermistor if you have not
 	already done so.  Depending on your heat bed and thermistor, the most
 	likely procedure here is to secure the thermistor to the middle of the
 	bottom-side of the heat bed with a strip of Kapton tape.  
 *	Attach the heat bed with a screw through each corner, with the head of
-	the screw up, down through the heat bed, through a spring (or M3 nut), 
-	through the wood print bed, and into a lock nut.  
+	the screw up, down through the heat bed, through a spring, then through 
+	the wood print bed, and into a lock nut.  Compress the springs about 
+	halfway (you will adjust each corner later to level the bed more 
+	precisely).
 
 7.7	Attach Limit Switches
 
@@ -338,27 +337,127 @@ Set the prepared wood print bed aside.
 
 	a.	Three micro limit switches
 	b.	The Z axis limit switch mount
+	c.	One T-slot nut and M5 x 8mm screw
 	c.	M2 x 16mm screws and nuts as needed (up to 6 each)
 
 *	If your limit switches do not already have wires attached, do that
 	now.  You will need approximately 45cm (18") of wire on each switch
 	(depending on where you locate the electronics).
 
-8.	Assemble the Extruder
+*	Slide a T nut into the outer side of the left upright piece from
+	the bottom.  Attach the Z endstop holder with a M5 x 8 screw.
+
+8.	Extruder Assembly and Mounting
+
+8.1 Assemble the Extruder
 
 *	You will need:
 
-	a.	The extruder body, idler, and gear set.
-	b.	The remaining NEMA17 stepper motor.
-	c.	The M8 Hobbed bolt, two M8 nuts, and washers (probably 4).
-	d.	The hot end.
-	e.	Four M3 x 30mm screws and nuts.
-	f.	The plastic fan duct.
-	g.	The 40mm x 40mm fan.
+	a.	The extruder body and idler.
+	b.	The hot end.
+	c.	The M8 Hobbed bolt
+	d.	Two M8 nuts (or one M8 locknut), and washers (probably 4).
+	e.	Two springs (approx 1" long uncompressed)
+	f.	The M8 x 20mm smooth rod (or M8 x 20mm grub screw)
+	g.	Three 608 bearings
+	h.	Two M3 x 60mm screws 
+	i.	The larger extruder gear.
+	j.	Three M3 x 30mm screws
+	k.	Five M3 nuts
 
 *	If your hot end was not previously assembled (heater resistor and 
 	thermistor), do that now.  Follow the instructions for your particular
 	hot end.
+*	Slide the M8 x 20mm shaft through a 608 ball bearing then push this 
+	assembly inside the extruder idler. You may have to use pliers to snap
+	the shaft into place.  Apply even pressure on top of the shaft/bearing
+	to avoid cracking the plastic idler.
+*	Insert an M3 nut into the inner recess provided on the idler.  Use 
+	pliers or a hot iron to fix the nut into place (be careful not to break
+	the idler in the process).  
+*	Thread an M3 x 30mm screw through the outer side of the idler on the
+	side you just inserted the nut, just until the screw starts into the 
+	nut.
+*	Fix the idler assembly to the Wade Body Extruder and then finish 
+	screwing the M3 x 30 bolt all the way through the fulcrum support.
+
+*	Slide the Wade Big Gear through the hobbed bolt so that the hex head of
+	the bolt is secured in the recess of the big gear.  Slide 3-5 M8 washers
+	onto the bolt (they go between the gear and the body of the extruder to
+	provide spacing) followed by one 608 bearing.  Insert the bolt into the
+	extruder body, securing the bearing in the hole provided.  Add another 
+	608 bearing on the loose end of the bolt, followed by another M8 washer 
+	and	locknut.  Tighten the lock nut just enough to keep the hobbed bolt 
+	in place; it should spin freely.
+
+*	Insert two M3 nuts in their slots on the top of the extruder body.  
+	Place an washer, then spring, then another washer on each M3 x 60mm 
+	screw, then thread the screws through the slots of the idler and into
+	the nuts you inserted in the extruder body.  Tighten the screws until
+	the springs are well compressed (this keeps tension on the printer 
+	filament).  If either spring is too short (or the bolts are too long)
+	to compress properly, remove the bolt and place an M3 nut on first
+	(before the washer/springs).
+
+*	Insert the hot end into the 16mm hold on the bottom of the extruder.  
+
+*	Secure the hot end to the extruder body by threading in two M3 x 30mm 
+	screws through the front of the extruder (they will pinch the sides of 
+	the hot end on their way through the plastic body).  Secure with M3
+	nuts and tighten well (it is critical that the hot end be rigid and 
+	not wobbly).
+
+8.2	Connecting extruder to X-axis
+
+*	You will need:
+
+	a.	Extruder assembly
+	b.	Wade Small Gear
+	c.	One NEMA 17 motor
+	d.	The plastic fan duct.
+	e.	One 40mm x 40mm x 10mm fan.
+	f.	Four  M4 x 25 mm screws
+	g.	Four  M4 nuts
+	h.	One   M3 x 20mm screw
+	i.	Seven M3 x 14mm screws
+	j.	Three M3 washers
+	k.	One   M3 x 8mm screw
+	l.	Five  M3 nuts
+	m.	One   M3 locknut
+
+*	Insert two M4 nuts in the bottom of the extruder body in the slots 
+	provided.  Use pliers to gently press the nuts into the plastic, or 
+	press them in with the tip of a hot soldering iron if the holes are 
+	too tight.  
+*	Insert two M4 nuts into the slots on the sides of the extruder body.
+*	The extruder is held to the X carriage by the four M4 x 25mm screws.  
+	Insert the four screws through the back of the X carriage and then 
+	slide on the extruder assembly (thread the top two screws into the 
+	nuts you just inserted).  Then screw the two lower M4 nuts into 
+	place and tighten all four screws.
+*	Insert an M3 nut into the slot on the small gear.  Use pliers or a hot
+	iron to press into place if necessary.  
+*	Slide the small gear onto the shaft of the NEMA 17 motor.  If 
+	necessary, drill out the shaft hole on the small gear with a 5mm drill 
+	bit.
+*	Insert the M3 x 8mm screw and tighten against the shaft of the motor.
+*	Place the motor assembly against the Wade Extruder Body (supply wires 
+	upwards). Insert three M3x14 mm screws and three Ø3 mm washers without 
+	tightening.  Slide the motor assembly against the Wade Big Gear and 
+	tighten the screws to hold the motor secure.
+*	Attach the 40mm fan to the fan duct using four M3 x 14mm screws and 
+	M3 nuts.  Make sure the fan is oriented so that airflow is going toward
+	the duct (usually this means the side of the fan with a label on it
+	will be against the fan duct).
+*	Fix the Fan Duct assembly on the Wade Extruder Body with an M3 30mm 
+	screw and an M3 lock nut.  Do not overtighten.
+
+8.3	Install glass bed
+
+*	Now is a good time to install the glass bed.  Place the glass on top
+	of the heat bed and secure with four paper-binder clips.  If the X axis
+	is too low, you may have to manually turn the two Z axis rods to lift
+	it high enough so that the glass will fit underneat the hot end nozzle.
 
 9.	Connect the Electronics
 
