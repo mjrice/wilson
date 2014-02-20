@@ -1,10 +1,14 @@
 Reprap Wilson Assembly Guide
 Written by Martin Rice <mrice411@gmail.com>
 
-* For the latest version of this document, check the "docs" folder at     *
-* https://github.com/mjrice/wilson                                        *
-* Please refer to the wilson-bom spreedsheet for a comprehensive list of  *
-* parts needed before you begin.                                          *
++ For the latest version of this document, check the "docs" folder at     +
++ https://github.com/mjrice/wilson                                        +
++                                                                         +
++ Please refer to the wilson-bom spreedsheet for a comprehensive list of  +
++ parts needed before you begin.                                          +
++                                                                         +
++ You will find photos of most of the steps below indexed by the step     +
++ number, located in the images/ folder.                                  +
 
 1. Assemble the Y axis (part 1)
 
@@ -111,9 +115,9 @@ Set the prepared wood print bed aside.
 	two nuts on each extrusion and attach the braces with a total of 8 M5 
 	screws. Note that the longer extrusions (the "sides" of the frame) 
 	should cover the ends of the bottom extrusion piece. Leave the screws 
-	loose until all 8 are started. Stand the frame "upright" to ensure the 
-	sides are slid down flush with the bottom and alternately tighten until 
-	all the screws are tight.
+	loose until all 8 are started. 
+*	Stand the frame "upright" to ensure the sides are slid down flush with 
+	the bottom and alternately tighten until all the screws are tight.
 *	Rotate the frame so the other side is facing you and put it back flat 
 	on your work surface.
 *	Slide two more T nuts into each side piece and attach the motor mounts 
