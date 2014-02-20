@@ -1,6 +1,11 @@
 Reprap Wilson Assembly Guide
 Written by Martin Rice <mrice411@gmail.com>
 
+* For the latest version of this document, check the "docs" folder at     *
+* https://github.com/mjrice/wilson                                        *
+* Please refer to the wilson-bom spreedsheet for a comprehensive list of  *
+* parts needed before you begin.                                          *
+
 1. Assemble the Y axis (part 1)
 
 1.1 Gather the following parts
@@ -60,7 +65,6 @@ Gather the following materials
 	c.	The heat bed
 	d.	The four linear bearing holders
 	e.	Eight miniature zip ties 
-
 
 *	Place the heat bed circuitboard over the wood bed and mark the four 
 	corner locations with a pencil.
@@ -310,7 +314,8 @@ Set the prepared wood print bed aside.
 *	You will need:
 	a.	Filament holder mounts
 	b.	SMART display mounts
-	c.	M5 x 8mm screws
+	c.	RAMPS electronics frame mount
+	c.	Eight M5 x 8mm screws
 
 
 7.6	Attach heat bed
@@ -318,7 +323,7 @@ Set the prepared wood print bed aside.
 *	You will need:
 
 	a.	The heat bed circuitboard
-	b.	Four M3 x 25mm screws and locknuts
+	b.	Four M3 x 30mm screws and locknuts
 	c.	Four springs (approx 1" long uncompressed)
 
 * 	This is a good time to attach the heat bed thermistor if you have not
@@ -466,5 +471,30 @@ Set the prepared wood print bed aside.
 	a.	The electronics controller of your choice (e.g. RAMPS)
 	b.	The power supply
 	c.	SMART display (optional)
+
+*	Use the checklist below as you connect the electronics.  If your 
+	electronics board has multiple options for connecting devices, make a
+	note of which connection you use so that you can input the settings
+	to your firmware.
+
+	[ ]	X axis stepper motor
+	[ ] Y axis stepper motor
+	[ ] Z axis stepper motors (2)
+	[ ] Extruder stepper motor
+	[ ] X axis limit switch
+	[ ] Y axis limit switch
+	[ ] Z axis limit switch
+	[ ] Heat bed power
+	[ ]	Extruder heater power
+	[ ]	Extruder fan power
+
+
+
+
+
+
+
+
+
 
 
