@@ -12,7 +12,8 @@ strengthen_around_fan = 1; // adds block behind fan for extra stiffness
 brace_h            = 41;
 want_endstop_mount = 1;    // set to zero if you don't want it!
 fan_depth = 10; // if this is greater than 10mm, be sure to add strengthen from above.
-
+end_w = 193.5;
+tie_wrap_extra = 1;
 
 //endpost();
 yend_motor();
@@ -26,7 +27,7 @@ module yend_motor()
        // first corner
        endpost();
        // second corner
-       translate([193.5,0,0]) scale([-1,1,1]) endpost();
+       translate([end_w,0,0]) scale([-1,1,1]) endpost();
        // motor and fan mount
        translate([motor_face_x_offs,0,0]) translate([-60,42.52,-3]) rotate([0,0,-89.4]) import("i3rsubmotor_fixed.stl");
    
@@ -49,8 +50,9 @@ module yend_motor()
 
      }
 
+     // bevels on outer corners
      translate([-1,-23/2,-1])    rotate([0,0,45]) cube([10,10,90]);
-     translate([194.5,-23/2,-1]) rotate([0,0,45]) cube([10,10,90]);
+     translate([end_w+1,-23/2,-1]) rotate([0,0,45]) cube([10,10,90]);
      translate([43,21,-1]) cube([32,30,10]);
      
      // fancy big cutout
@@ -80,18 +82,18 @@ module endpost()
        union() {
          difference() {
            cube([23,16,height_of_post]);
-           translate([23/2,7,height_of_post]) rotate([-90,0,0]) cylinder(r=smooth_rod_d/2+2+tie_wrap_t,h=tie_wrap_w);
+           #translate([23/2,7,height_of_post]) rotate([-90,0,0]) cylinder(r=smooth_rod_d/2+2+tie_wrap_t+tie_wrap_extra,h=tie_wrap_w);
          }
 
          difference() {
-         translate([23/2,7,height_of_smooth]) rotate([-90,0,0]) cylinder(r=smooth_rod_d/2+2,h=tie_wrap_w);
+         translate([23/2,7,height_of_post]) rotate([-90,0,0]) cylinder(r=smooth_rod_d/2+2+tie_wrap_extra,h=tie_wrap_w);
          translate([0,0,height_of_post]) cube([23,16,10]);
          }
        }
 
-       #translate([23/2,-10,height_of_threaded ]) rotate([-90,0,0]) cylinder(r=threaded_rod_d/2+.4,h=380);
-       #translate([23/2,-.1,height_of_threaded ]) rotate([-90,0,0]) cylinder(r=washer_d/2+.4,h=washer_recess);
-       #translate([23/2,2.5,height_of_smooth]) rotate([-90,0,0]) cylinder(r=smooth_rod_d/2+.1,h=380);
+       translate([23/2,-10,height_of_threaded ]) rotate([-90,0,0]) cylinder(r=threaded_rod_d/2+.4,h=380);
+       translate([23/2,-.1,height_of_threaded ]) rotate([-90,0,0]) cylinder(r=washer_d/2+.4,h=washer_recess);
+       translate([23/2,2.5,height_of_smooth]) rotate([-90,0,0]) cylinder(r=smooth_rod_d/2+.1,h=380);
      }
 
 }
@@ -100,7 +102,7 @@ module bigbase()
 {     
        intersection() {
        cube([193.5,55,2]);
-       translate([193.5/2,-85,-1]) cylinder(r=140,h=9,$fn=50);
+       translate([end_w/2,-85,-1]) cylinder(r=140,h=9,$fn=50);
        }
 }
 
