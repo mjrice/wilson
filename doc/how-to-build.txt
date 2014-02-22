@@ -161,7 +161,10 @@ Set the prepared wood print bed aside.
 	a.	The two plastic X end pieces ("motor" and "idler") 
 	b.	Eight linear bearings (LM8UU) 
 	c.	The two X axis smooth rods 
-	d.	Two M5 nuts 	
+	d.	Two M5 nuts
+	e.	X endstop limit switch
+	f.	One M3 x 30mm screw and nut
+	g.	One spring 	
 
 4.2 Hardware Assembly
 
@@ -169,6 +172,11 @@ Set the prepared wood print bed aside.
 *	Using pliers, gently press an M5 nut into the provided insert in each 
 	end. 
 *	Place two linear bearings on each of the smooth rods. 
+*   Insert the X endstop switch (previously wired) into the slot provided
+	on the X motor end.  Route the wires down and through the guide on
+	the bottom side of the end.  Secure with a zip tie.
+*	Press an M3 nut into the bottom of the Z axis adjuster, then thread 
+	an M3 x 30mm screw through a spring and into the nut from the top side.
 *	Press each X end onto the pair of smooth rods, being sure to orient 
 	them so that the M5 nuts are on the same side of the rods. 	
 
