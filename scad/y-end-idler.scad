@@ -12,8 +12,8 @@ tie_wrap_extra = 1;
 belt_h = 29;
 idler_w = 10; // the gap provided for the bearing holder
 idler_wall_t = 5;
-idler_bearing_inside_d = 3;
 end_w = 193.5;
+idler_wall_h = 32.6;
 
 yend_idler();
 
@@ -62,9 +62,17 @@ module idler_post()
                    translate([0,10,belt_h]) rotate([0,90,0]) cylinder(r=10,h=idler_wall_t);
              }
              translate([-idler_w,0,0]) cube(size=[idler_wall_t * 2 + idler_w,20,belt_h/2]);
+             
+             //translate([-idler_w,-1,idler_wall_h]) rotate([0,90,0]) cylinder(r=idler_bearing_inner_d/2,h=20,$fn=20);
+
          } 
          // holes for idler bolt
-         #translate([-12,10,belt_h]) rotate([0,90,0]) cylinder(r=idler_bearing_inside_d/2+.5,h=25);
+         #translate([-12,10,belt_h]) rotate([0,90,0]) {
+             cylinder(r=idler_bearing_inner_d/2+.5,h=25);
+             translate([0,0,1]) cylinder(r=idler_bearing_inner_d,h=3);
+             translate([0,0,idler_w+idler_wall_t*2]) cylinder(r=idler_bearing_inner_d,h=3,$fn=6);
+         }
+         
          
     }
 }

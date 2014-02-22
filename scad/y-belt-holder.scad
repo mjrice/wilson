@@ -4,7 +4,6 @@
 // Josef Průša <josefprusa@me.com>
 // Václav 'ax' Hůla <axtheb@gmail.com>
 // Alterations for reprap Wilson by Martin Rice <mrice411@gmail.com>
-// (this is exactly like the box-frame Y belt holder)
 
 include <configuration.scad>
 include <functions.scad>

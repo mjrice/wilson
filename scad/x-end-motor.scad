@@ -4,6 +4,7 @@
 // Josef Průša <iam@josefprusa.cz> and contributors
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://prusamendel.org
+// Alterations for reprap Wilson by Martin Rice <mrice411@gmail.com>
 
 use <x-end.scad>
 
@@ -11,6 +12,7 @@ offs_adjuster_y = 5.5;
 adj_block_x = 12;
 adj_block_y = 10;
 adj_block_z = 32;
+motor_offs_z = 0;
 
 module adjustomatic() {
 
@@ -34,35 +36,57 @@ module adjustomatic() {
 
 }
 
+module pocket_endstop()
+{
+translate([-7,-40,0]) 
+    difference() {
+       union() {  translate([-1.5,0,0]) cube(size=[9,16,22]);
+                  translate([3,12,20]) cylinder(r=4,h=10,$fn=16);
+                  translate([-10,50,57.9]) rotate([90,0,0]) cube(size=[9,4,30]);
+       }
+    
+    translate([0,-1,1]) cube(size=[6,16,20]);
+    #translate([3,12,20]) cylinder(r=3,h=21,$fn=16);
+    // grove for wiring along bottom
+    #translate([-9,50.5,58]) rotate([90,0,0]) cube(size=[7,3,31]);
+    // screw holes for endstop switch
+    #translate([-2,7,1.5+5.5]) rotate([0,90,0]) cylinder(r=1.5,h=15);
+    #translate([-2,7,1.5+5.5+9.5]) rotate([0,90,0]) cylinder(r=1.5,h=15);
+    #translate([0,-3,15]) cube(size=[6,15,20]);
+    }
+}
+
 module x_end_motor_base(){
  x_end_base();
  // motor arm
- translate(v=[-15,31,26.5]) cube(size = [17,44,53], center = true);
+ translate(v=[-15,31,26.5+motor_offs_z]) cube(size = [17,44,53], center = true);
  // z stop adjuster
  adjustomatic();
+ // x endstop holder
+ pocket_endstop();
 }
 
 module x_end_motor_holes(){
  x_end_holes();
  // Position to place
- translate(v=[-1,32,30.25]){
+ translate(v=[-1,32,30.25+motor_offs_z]){
   // Belt hole
   translate(v=[-14,1,0]) cube(size = [10,46,22], center = true);
   // Motor mounting holes
   translate(v=[20,-15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=1.8, $fn=30);
-  translate(v=[1,-15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 10, r=3.1, $fn=30);
+  #translate(v=[1,-15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=3.2, $fn=30);
  
 
   translate(v=[20,-15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=1.8, $fn=30);
-  translate(v=[1,-15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 10, r=3.1, $fn=30);
+  #translate(v=[1,-15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=3.2, $fn=30);
 
 
   translate(v=[20,15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=1.8, $fn=30);
-  translate(v=[1,15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 10, r=3.1, $fn=30);
+  #translate(v=[1,15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=3.2, $fn=30);
 
 
   translate(v=[20,15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=1.8, $fn=30);
-  translate(v=[1,15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 10, r=3.1, $fn=30);
+  #translate(v=[1,15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=3.2, $fn=30);
 
   // Material saving cutout 
   translate(v=[-10,12,10]) cube(size = [60,42,42], center = true);
@@ -71,6 +95,10 @@ module x_end_motor_holes(){
   translate(v=[-10,40,-30]) rotate(a=[45,0,0])  cube(size = [60,42,42], center = true);
   // Motor shaft cutout
   translate(v=[0,0,0]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=17, $fn=6);
+
+   #translate([-5,-59,13]) difference() { cylinder(r=4,h=5);
+                                          translate([0,0,-1]) cylinder(r=2.5,h=7);
+                                        }
  }
 }
 
