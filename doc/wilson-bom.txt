@@ -1,0 +1,76 @@
+Reprap Wilson default parts list
+(text export from wilson-bom.ods - use spreedsheet to generate custom bom)
+                                                              
+Item                              Quantity       Length / Note
+
+2020 Extrusions                                      
+Vertical frame piece (sides)             2                 370mm     
+Horizontal frame piece (top and bo       2                 330mm     
+
+M8 Smooth Rods                                      
+X-Axis                                   2                 380mm     
+Y-Axis                                   2                 380mm     
+Z-Axis                                   2                 325mm     
+
+Threaded Rods                                       
+M5 threaded rod for Z axis               2                 300mm     
+M10 threaded rod for Y axis              2                 405mm     
+
+Belts & Pulleys                                      
+Y axis GT2 timing belt (w=6mm)           1                 820mm     
+X axis GT2 timing belt (w=6mm)           1                 930mm     
+GT2 pulley                               2       
+
+Nuts & Bolts                                       
+M10 nuts and washers                    12                    
+M5 x 8mm machine screw                  36                    
+M5 hex nut                               2                    
+M5 t slot nut                           36                    
+M4 x 20mm machine screw                  6                    
+M4 hex nut                               6                    
+M3 x 8mm machine screw                   1                    
+M3 x 10mm machine screw                 11                    
+M3 x 14mm machine screw                 18                    
+M3 x 30mm machine screw                  7                    
+M3 x 60mm machine screw                  2       50mm ok if your springs are short enough       
+M3 hex nut                              20?      
+M3 lock nut                              7                    
+M8 x 20mm smooth rod or grub screw       1                    
+
+Printed Parts – Required                                 
+X end idler                              1                    
+X end motor                              1                    
+X carriage                               1                    
+Y end idler                              1                    
+Y end motor                              1                    
+Z motor holder, left                     1                    
+Z motor holder, right                    1                    
+Z rod holder, left                       1                    
+Z rod holder, right                      1                    
+Z rear bracket                           2                    
+Frame brace                              2                    
+Idler bearing guide (pair)               2                    
+
+Printed Parts – Recommended                                
+Electronics frame mount                  1                    
+Filament spool support                   1                    
+SMART display frame mount                1                    
+
+Everything Else                                      
+NEMA17 Stepper motor                     5                    
+MDF board (6mm thick)                    1       230mm by 230m
+MK2 Heat bed                             1                    
+Glass bed                                1       3mm borosilicate
+Controller (Mega/RAMPS, Rambo, etc       1                    
+Endstop (limit) switch                   3       
+LM8UU Linear bearing                    12                    
+608ZZ roller bearing                     4                    
+624 roller bearing                       2                    
+5mm to 5mm shaft couplers                2       Can also use 3/16" ID vinyl tubing
+40mm x 40mm x 10mm fan                   1                    
+80mm x 80mm fan                          1       
+Miniature zip ties                      20       
+Extruder idler springs                   2       High tension 
+Bed leveling springs                     4       Lower tension
+Power Supply                             1       
+
