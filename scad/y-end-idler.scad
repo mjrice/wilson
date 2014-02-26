@@ -111,12 +111,13 @@ module bigbase()
 }
 
 module brace() {
-    translate([193.5,17,0]) rotate([0,0,180]) difference() {  translate([193.5/2,-290,0]) cylinder(r=310,h=32.6,$fn=200);
-                    translate([193.5/2,-211.9+5,-2]) cylinder(r=223,h=50,$fn=200);
-                    translate([-320,3,-2]) rotate([0,0,270]) cube([900,900,50]);
-                    translate([-20,-1,-1]) cube([43,16,47]);
-                    translate([193.5-22.9,-1,-1]) scale([1,1,1]) cube([43,16,47]);
-                    //translate([192.5/2-23/2+5.9,0,14.5]) cube([11.96,40,20]);
+    translate([193.5,17,0]) rotate([0,0,180]) difference() {  
+                    translate([193.5/2,-290,0])                  cylinder(r=310,h=32.6,$fn=200);
+                    translate([193.5/2,-211.9+5,-2])             cylinder(r=223,h=50,$fn=200);
+                    translate([-320,3,-2]) rotate([0,0,270])     cube([900,900,50]);
+                    #translate([-22,-1,-1])                       cube([43,16,47]);
+                    #translate([(end_w-22),-1,-1]) scale([1,1,1]) cube([43,16,47]);
+                    //translate([192.5/2-23/2+5.9,0,14.5])       cube([11.96,40,20]);
 
 }
 }
