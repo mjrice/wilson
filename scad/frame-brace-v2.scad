@@ -1,6 +1,5 @@
-//
 // Y frame brace for Wilson TS
-//
+// by sgraber
 
 //translate([0,-50,0]) cube(size=[20.9,100,20.9]);
 
