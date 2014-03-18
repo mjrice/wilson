@@ -1,4 +1,4 @@
-Reprap Wilson default parts list
+Reprap Wilson RS default parts list
 (text export from wilson-bom.ods - use spreedsheet to generate custom bom)
                                                               
 Item                              Quantity       Length / Note
