@@ -6,3 +6,5 @@ The Extruder files, including the X carriage, came originally from the Prusa i3 
 Those works are in turn derived from earlier designs by ch1t0, afaik.
 
 I have modified the body of the extruder to translate the motor 5MM toward -X to accomodate the herringbone gears, which I generated from a modified version of the herringbone script by ScribbleJ.
+
+** The gear ratio for the herringbone gears is 37/13, which will necessitate a change to your firmware!
