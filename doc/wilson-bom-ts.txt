@@ -1,63 +1,63 @@
 Exported bom for Wilson TS from wilson-bom.ods 
+Please see the ODS file for details.  
 ----------------------------------------------
 
-Item	Quantity	Length / Notes
+Item                                    Quantity	Length / Notes
 
 2020 Extrusions		
-Vertical frame piece (sides)			2	400mm
-Horizontal frame piece (top and bottom)	2	320mm
-Y axis frame piece (TS only)			2	415mm
+Vertical frame piece (sides)            2           400mm
+Horizontal frame piece (top and bottom) 2           320mm
+Y axis frame piece (TS only)            2           415mm
 
 M8 Smooth Rods		
-X-Axis									2	380mm
-Y-Axis									2	415mm
-Z-Axis									2	350mm
+X-Axis                                  2           380mm
+Y-Axis                                  2           415mm
+Z-Axis                                  2           350mm
 
 Threaded Rods		
-M5 threaded rod for Z axis				2	325
+M5 threaded rod for Z axis              2           325mm
 
 Belts & Pulleys		
-Y axis GT2 timing belt (w=6mm)	1	850mm
-X axis GT2 timing belt (w=6mm)	1	930mm
-GT2 pulley	2	Want diameter 16-20mm
+Y axis GT2 timing belt (w=6mm)          1           850mm
+X axis GT2 timing belt (w=6mm)          1           930mm
+GT2 pulley                              2           Want diameter 16-20mm
 Nuts & Bolts		
-M10 nuts and washers	0	
-M5 x 10mm machine screw	44	
-M5 hex nut	2	
-M5 t slot nut	44	
-M4 x 20mm machine screw	6	
-M4 hex nut	6	
-M3 x 8mm machine screw	1	
-M3 x 10mm machine screw	11	
-M3 x 14mm machine screw	18	
-M3 x 30mm machine screw	7	
-M3 x 60mm machine screw	2	50mm?
-M3 hex nut	20?	This number is approximate
-M3 lock nut	7	
-M3 washer	20?	This number is approximate
-M8 x 20mm smooth rod or grub screw	1	
-M8 washers	5	For alignment of hobbed bolt
-M8 locknut	1	For extruder bolt
+M5 x 10mm machine screw                 44	
+M5 hex nut                               2	
+M5 t slot nut                           44	
+M4 x 20mm machine screw                  6	
+M4 hex nut                               6	
+M3 x 8mm machine screw                   1	
+M3 x 10mm machine screw                 11	
+M3 x 14mm machine screw                 18	
+M3 x 30mm machine screw                  7	
+M3 x 60mm machine screw                  2         50mm? if spring short enough
+M3 hex nut                             20?         This number is approximate
+M3 lock nut                              7	
+M3 washer                              20?         This number is approximate
+M8 x 20mm smooth rod or grub screw       1	
+M8 washers                               5         For alignment of hobbed bolt
+M8 locknut                               1         For extruder bolt
 Printed Parts – Required		
-X end idler	1	
-X end motor	1	
-X carriage	1	
-Y end idler	1	
-Y end motor	1	
-Y belt holder	1	
-Y axis bearing holder	4	for lm8uu bearings
-Z motor holder, left	1	
-Z motor holder, right	1	
-Z rod holder, left	1	
-Z rod holder, right	1	
-Z rear bracket	2	
-Z endstop holder	1	
-Frame brace	4	
-Idler bearing guide (pair)	2	
-Extruder body / idler set	1	
-Extruder big gear / small gear set	1	
-Extruder fan duct	1	
-Belt guides	4	(two belt guides, one for each 624 bearing)
+X end idler                              1	
+X end motor                              1	
+X carriage                               1	
+Y end idler                              1	
+Y end motor                              1	
+Y belt holder                            1	
+Y axis bearing holder                    4         for lm8uu bearings
+Z motor holder, left                     1	
+Z motor holder, right                    1	
+Z rod holder, left                       1	
+Z rod holder, right                      1	
+Z rear bracket                           2	
+Z endstop holder                         1	
+Frame brace                              4	
+Idler bearing guide (pair)               2	
+Extruder body / idler set                1	
+Extruder big gear / small gear set       1	
+Extruder fan duct                        1	
+Belt guides	                             4         (two belt guides, one for each 624 bearing)
 Printed Parts – Recommended		
 Electronics frame mount (for RAMPS)	1	
 Filament spool support (two pieces)	1	
