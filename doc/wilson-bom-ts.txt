@@ -1,0 +1,84 @@
+Exported bom for Wilson TS from wilson-bom.ods 
+----------------------------------------------
+
+Item	Quantity	Length / Notes
+
+2020 Extrusions		
+Vertical frame piece (sides)			2	400mm
+Horizontal frame piece (top and bottom)	2	320mm
+Y axis frame piece (TS only)			2	415mm
+
+M8 Smooth Rods		
+X-Axis									2	380mm
+Y-Axis									2	415mm
+Z-Axis									2	350mm
+
+Threaded Rods		
+M5 threaded rod for Z axis				2	325
+
+Belts & Pulleys		
+Y axis GT2 timing belt (w=6mm)	1	850mm
+X axis GT2 timing belt (w=6mm)	1	930mm
+GT2 pulley	2	Want diameter 16-20mm
+Nuts & Bolts		
+M10 nuts and washers	0	
+M5 x 10mm machine screw	44	
+M5 hex nut	2	
+M5 t slot nut	44	
+M4 x 20mm machine screw	6	
+M4 hex nut	6	
+M3 x 8mm machine screw	1	
+M3 x 10mm machine screw	11	
+M3 x 14mm machine screw	18	
+M3 x 30mm machine screw	7	
+M3 x 60mm machine screw	2	50mm?
+M3 hex nut	20?	This number is approximate
+M3 lock nut	7	
+M3 washer	20?	This number is approximate
+M8 x 20mm smooth rod or grub screw	1	
+M8 washers	5	For alignment of hobbed bolt
+M8 locknut	1	For extruder bolt
+Printed Parts – Required		
+X end idler	1	
+X end motor	1	
+X carriage	1	
+Y end idler	1	
+Y end motor	1	
+Y belt holder	1	
+Y axis bearing holder	4	for lm8uu bearings
+Z motor holder, left	1	
+Z motor holder, right	1	
+Z rod holder, left	1	
+Z rod holder, right	1	
+Z rear bracket	2	
+Z endstop holder	1	
+Frame brace	4	
+Idler bearing guide (pair)	2	
+Extruder body / idler set	1	
+Extruder big gear / small gear set	1	
+Extruder fan duct	1	
+Belt guides	4	(two belt guides, one for each 624 bearing)
+Printed Parts – Recommended		
+Electronics frame mount (for RAMPS)	1	
+Filament spool support (two pieces)	1	
+SMART display frame mount (two pieces)	1	
+Everything Else		
+NEMA17 Stepper motor	5	
+MDF board (6mm thick)	1	230mm by 230mm
+MK2 Heat bed	1	
+Glass bed	1	3mm borosilicate
+Controller (Mega/RAMPS, Rambo, etc)	1	
+Endstop (limit) switch	3	6mm x 10mm x 20mm
+LM8UU Linear bearing	12	
+608ZZ roller bearing	4	
+624 roller bearing	2	
+5mm to 5mm shaft couplers	2	Can also use vinyl tubing instead
+40mm x 40mm x 10mm fan	1	12V
+80mm x 80mm fan	1	For use with RAMPS frame mount
+Miniature zip ties	20	This number is approximate
+Extruder idler springs	2	High tension 
+Bed leveling springs	4	Lower tension
+Power Supply	1	Size appropriately for heat bed and extruder
+Hobbed bolt	1	Recommend airwolf3d
+Hot end	1	Recommend Jhead
+
