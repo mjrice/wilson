@@ -8,7 +8,8 @@
 use <bearing.scad>
 
 rod_distance = 45;
-pushfit_d = 8.2;
+pushfit_d = 8.6;
+hex_nut_r = 4.75;
 
 module x_end_base(){
 // Main block
@@ -25,14 +26,12 @@ translate(v=[-15,-9,height/2]) cube(size = [17,39,height], center = true);
 
 module x_end_holes(){
  vertical_bearing_holes();
-// Belt hole
-translate(v=[-1,0,0]){
-// Stress relief
-translate(v=[-5.5-10+1.5,-10-1,30]) cube(size = [20,1,28], center = true);
-difference(){
+ // Belt hole
+ translate(v=[-1,0,0]){
+ // Stress relief
+ translate(v=[-5.5-10+1.5,-10-1,30]) cube(size = [20,1,28], center = true);
+ difference(){
 	translate(v=[-5.5-10+1.5,-10,30]) cube(size = [10,46,28], center = true);
-
-	
 
 	// Nice edges
 	translate(v=[-5.5-10+1.5,-10,30+23]) rotate([0,45,0]) cube(size = [10,46,28], center = true);
@@ -50,8 +49,8 @@ translate(v=[-15,-41.5,6]) rotate(a=[-90,0,0]) pushfit_rod(pushfit_d,50);
 // Top pushfit rod
 translate(v=[-15,-41.5,rod_distance+6]) rotate(a=[-90,0,0]) pushfit_rod(pushfit_d,50);
 // Nut trap
- translate(v=[0,-17,-0.5]) cylinder(h = 4, r1=3.3, r2=2.8, $fn=25);
- translate(v=[0,-17,3]) rotate([0,0,30]) cylinder(h = 10, r=4.5, $fn = 6);
+ #translate(v=[0,-17,-0.5]) cylinder(h = 4, r1=3.4, r2=2.9, $fn=25);
+ translate(v=[0,-17,3]) rotate([0,0,30]) cylinder(h = 10, r=hex_nut_r, $fn = 6);
 }
 
 

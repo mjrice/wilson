@@ -28,7 +28,7 @@ module adjustomatic() {
 
        translate(v=[-(15+17/2+adj_block_x/2),offs_adjuster_y,58-adj_block_z/2+14]) 
            {
-         rotate([0,0,30]) #cylinder(h = 4, r=3.1, $fn = 6);
+         rotate([0,0,30]) #cylinder(h = 4, r = 7.5/2 , $fn = 6);
          translate([0,0,-20]) #cylinder(h=30,r=2,$fn=16);
 }
 
@@ -41,18 +41,18 @@ module pocket_endstop()
 translate([-7,-40,0]) 
     difference() {
        union() {  translate([-1.5,0,0]) cube(size=[9,16,22]);
-                  translate([3,12,20]) cylinder(r=4,h=10,$fn=16);
-                  translate([-10,50,57.9]) rotate([90,0,0]) cube(size=[9,4,30]);
+                  //translate([3,12,20]) cylinder(r=4,h=10,$fn=16);
+                  translate([-11,40,57.9]) rotate([90,0,0]) cube(size=[10,5,20]);
        }
     
-    translate([0,-1,1]) cube(size=[6,16,20]);
-    #translate([3,12,20]) cylinder(r=3,h=21,$fn=16);
+    #translate([-2,-1,1]) cube(size=[7,16,22]);
+    //#translate([3,12,20]) cylinder(r=3,h=21,$fn=16);
     // grove for wiring along bottom
-    #translate([-9,50.5,58]) rotate([90,0,0]) cube(size=[7,3,31]);
+    #translate([-10,50.5,58]) rotate([90,0,0]) cube(size=[8,4,31]);
     // screw holes for endstop switch
     #translate([-2,7,1.5+5.5]) rotate([0,90,0]) cylinder(r=1.5,h=15);
     #translate([-2,7,1.5+5.5+9.5]) rotate([0,90,0]) cylinder(r=1.5,h=15);
-    #translate([0,-3,15]) cube(size=[6,15,20]);
+    //#translate([0,-3,15]) cube(size=[6,15,20]);
     }
 }
 
@@ -66,6 +66,8 @@ module x_end_motor_base(){
  pocket_endstop();
 }
 
+screw_head_r = 3.5;
+
 module x_end_motor_holes(){
  x_end_holes();
  // Position to place
@@ -74,19 +76,19 @@ module x_end_motor_holes(){
   translate(v=[-14,1,0]) cube(size = [10,46,22], center = true);
   // Motor mounting holes
   translate(v=[20,-15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=1.8, $fn=30);
-  #translate(v=[1,-15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=3.2, $fn=30);
+  translate(v=[1,-15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=screw_head_r, $fn=30);
  
 
   translate(v=[20,-15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=1.8, $fn=30);
-  #translate(v=[1,-15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=3.2, $fn=30);
+  translate(v=[1,-15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=screw_head_r, $fn=30);
 
 
   translate(v=[20,15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=1.8, $fn=30);
-  #translate(v=[1,15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=3.2, $fn=30);
+  translate(v=[1,15.5,-15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=screw_head_r, $fn=30);
 
 
   translate(v=[20,15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=1.8, $fn=30);
-  #translate(v=[1,15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=3.2, $fn=30);
+  translate(v=[1,15.5,15.5]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 12, r=screw_head_r, $fn=30);
 
   // Material saving cutout 
   translate(v=[-10,12,10]) cube(size = [60,42,42], center = true);
@@ -96,8 +98,9 @@ module x_end_motor_holes(){
   // Motor shaft cutout
   translate(v=[0,0,0]) rotate(a=[0,-90,0]) rotate(a=[0,0,90]) cylinder(h = 70, r=17, $fn=6);
 
-   #translate([-5,-59,13]) difference() { cylinder(r=4,h=5);
-                                          translate([0,0,-1]) cylinder(r=2.5,h=7);
+  // zip tie retainer for securing end stop wiring
+  #translate([-5,-59,14]) difference() { cylinder(r=4.5,h=4,$fn=16);
+                                          translate([0,0,-1]) cylinder(r=2.5,h=7,$fn=16);
                                         }
  }
 }

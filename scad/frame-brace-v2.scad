@@ -1,9 +1,9 @@
 // Y frame brace for Wilson TS
 // by sgraber
 
-//translate([0,-50,0]) cube(size=[20.9,100,20.9]);
-
-//cube([20.9,20.9,20.9]);
+beam_size = 20;
+smidge = .65; // this is the amount needed for built-in slicing error (needs to be 
+              // about your nozzle width, maybe a little more so they aren't too tight)
 
 module fillet() {
 	difference() {
@@ -13,15 +13,16 @@ module fillet() {
 }
 
 bracket();
+
 module bracket() {
-difference() {
+ difference() {
 	union() {
-		cube(size=[20+8,45,4]);
-		translate([0,70/2-29/2,0]) cube(size=[20+8,24.7,30]);
+		cube(size=[beam_size+8,45,4]);
+		translate([0,70/2-29/2,0]) cube(size=[beam_size+8,beam_size + 4.7,30]);
 		translate([0,0.5,4]) fillet();
 		//translate([0,69.5,4]) mirror([0,1,0]) fillet();
 	}
-	translate([-0.25+4,70/2-20.5/2,0]) cube(size=[20.5,20.5,40]);
+	#translate([-0.25+4,70/2-20.5/2,-1]) cube(size=[beam_size + smidge,beam_size + 2,40]);
 	translate([10+4,7+8,-5]) cylinder(r=3,h=50);
 	translate([10+4,7+8,5]) #cylinder(r=5.5,h=50);
 	translate([10+4,63,-5]) cylinder(r=3,h=50);
@@ -31,5 +32,5 @@ difference() {
 	translate([10+4,70,10+8]) rotate([90,0,0]) cylinder(r=3,h=70);
 	translate([10+4,21,10+8]) rotate([90,0,0]) #cylinder(r=5.5,h=70);
 	translate([10+4,25+70,10+8]) rotate([90,0,0]) cylinder(r=5,h=43);
-}
+ }
 }
