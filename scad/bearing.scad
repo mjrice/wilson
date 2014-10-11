@@ -66,7 +66,7 @@ module vertical_bearing_base(){
  cylinder(h = 58, r=bearing_size/2, $fn = 90);
 }
 
-bearing_cut_extra = 0.425; // this 0.425 added to compensate for slicer error.
+bearing_cut_extra = 0.15; // padding so it's not too tight
 
 module vertical_bearing_holes(){
   #translate(v=[0,0,-4]) cylinder(h = 61, r=bearing_diameter/2 + bearing_cut_extra, $fn = 60);

@@ -8,7 +8,7 @@
 use <bearing.scad>
 
 rod_distance = 45;
-pushfit_d = 8.6;
+pushfit_d = 8.15;
 hex_nut_r = 4.75;
 
 module x_end_base(){

@@ -6,7 +6,7 @@ layer_height = 0.3;
 hotend_width = 0.5;
 
 wall= hotend_width*3;
-clearence= hotend_width/2; 
+clearence= hotend_width/2 - 0.05; 
 
 // for 624 bearings:
 bearing_d = 13;

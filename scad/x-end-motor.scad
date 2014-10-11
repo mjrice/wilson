@@ -112,5 +112,5 @@ module x_end_motor(){
   x_end_motor_holes();
  }
 }
-
+rotate([0,0,180])
 x_end_motor();
