@@ -6,38 +6,38 @@ Item                                    Quantity	Length / Notes
 
 2020 Extrusions		
 Vertical frame piece (sides)            2           400mm
-Horizontal frame piece (top and bottom) 2           320mm
-Y axis frame piece (TS only)            2           415mm
+Horizontal frame piece (top and bottom) 2           330mm
+Y axis frame piece (TS only)            2           400mm
 
 M8 Smooth Rods		
-X-Axis                                  2           380mm
-Y-Axis                                  2           415mm
+X-Axis                                  2           370mm
+Y-Axis                                  2           400mm
 Z-Axis                                  2           350mm
 
 Threaded Rods		
 M5 threaded rod for Z axis              2           325mm
 
 Belts & Pulleys		
-Y axis GT2 timing belt (w=6mm)          1           850mm
-X axis GT2 timing belt (w=6mm)          1           930mm
+Y axis GT2 timing belt (w=6mm)          1           830mm
+X axis GT2 timing belt (w=6mm)          1           900mm
 GT2 pulley                              2           Want diameter 16-20mm
+
 Nuts & Bolts		
-M5 x 10mm machine screw                 44	
+M5 x 10mm machine screw                 51	
 M5 hex nut                               2	
-M5 t slot nut                           44	
-M4 x 20mm machine screw                  6	
-M4 hex nut                               6	
-M3 x 8mm machine screw                   1	
+M5 t slot nut                           51	
+M4 x 20mm machine screw                  7	
+M4 hex nut                               7	
 M3 x 10mm machine screw                 11	
-M3 x 14mm machine screw                 18	
-M3 x 30mm machine screw                  7	
-M3 x 60mm machine screw                  2         50mm? if spring short enough
-M3 hex nut                             20?         This number is approximate
-M3 lock nut                              7	
-M3 washer                              20?         This number is approximate
-M8 x 20mm smooth rod or grub screw       1	
-M8 washers                               5         For alignment of hobbed bolt
-M8 locknut                               1         For extruder bolt
+M3 x 14mm machine screw                 24	
+M3 x 30mm machine screw                 10
+M3 x 50mm machine screw                  1	   this is for the hinged lever of the direct-dirve extruder
+M3 hex nut                              18
+M3 lock nut                             13	
+M3 washer                               17         This number is approximate
+M2 x 16mm machine screw	                 6	   These and M2 nuts for mounting end stops
+M2 hex nut	                         6	
+
 Printed Parts – Required		
 X end idler                              1	
 X end motor                              1	
@@ -57,28 +57,58 @@ Idler bearing guide (pair)               2
 Extruder body / idler set                1	
 Extruder big gear / small gear set       1	
 Extruder fan duct                        1	
-Belt guides	                             4         (two belt guides, one for each 624 bearing)
+Belt guides	                         4         (two belt guides, one for each 624 bearing)
+
 Printed Parts – Recommended		
 Electronics frame mount (for RAMPS)	1	
 Filament spool support (two pieces)	1	
 SMART display frame mount (two pieces)	1	
-Everything Else		
-NEMA17 Stepper motor	5	
-MDF board (6mm thick)	1	230mm by 230mm
-MK2 Heat bed	1	
-Glass bed	1	3mm borosilicate
-Controller (Mega/RAMPS, Rambo, etc)	1	
-Endstop (limit) switch	3	6mm x 10mm x 20mm
-LM8UU Linear bearing	12	
-608ZZ roller bearing	4	
-624 roller bearing	2	
-5mm to 5mm shaft couplers	2	Can also use vinyl tubing instead
-40mm x 40mm x 10mm fan	1	12V
-80mm x 80mm fan	1	For use with RAMPS frame mount
-Miniature zip ties	20	This number is approximate
-Extruder idler springs	2	High tension 
-Bed leveling springs	4	Lower tension
-Power Supply	1	Size appropriately for heat bed and extruder
-Hobbed bolt	1	Recommend airwolf3d
-Hot end	1	Recommend Jhead
 
+Everything Else		
+NEMA17 Stepper motor	                 5	
+MDF board (6mm thick)	                 1	230mm by 230mm
+Heat bed                                 1 	MK2a or whatever
+Heat bed thermistor                      1
+Glass bed	                         1	3mm borosilicate or picture frame glass 8.25" square
+Controller (Mega/RAMPS, Rambo, etc)	 1	
+Endstop (limit) switch	                 3	6mm x 10mm x 20mm
+LM8UU Linear bearing	                12	can get away with 11 if you use only three on the X carriage
+624 roller bearing                       2	
+5mm to 5mm shaft couplers	         2	Can also use vinyl tubing instead
+40mm x 40mm x 10mm fan	                 1	12V
+80mm x 80mm fan	                         1	For use with RAMPS frame mount
+Miniature zip ties	                20	This number is approximate
+Extruder idler springs	                 2	High tension 
+Bed leveling springs	                 4	Lower tension
+Power Supply	                         1	Size appropriately for heat bed and extruder
+Hot end	                                 1	Recommend Jhead
+MK7 drive gear                           1	omit if you are building the geared extruder (see below)
+Printer mount deck (optional)	         1	18” x 18” x 1/2” plywood works well.
+
+
+The items below are for building with the geared extruder instead of the direct-drive extruder
+
+M3 x 8mm machine screw                   1	for small gear
+M3 x 60mm machine screw                  2         
+M8 x 20mm smooth rod or grub screw       1	
+M8 washers                               5         For alignment of hobbed bolt
+M8 locknut                               1         For extruder bolt
+Hobbed bolt	                         1	Recommend airwolf3d
+608ZZ roller bearing	                 3	
+
+
+Notes about wires		
+The lengths shown are conservative estimates to help you plan for what you'll need		
+Extruder heater wire pair	70cm	
+Extruder thermistor wire pair	70cm	
+Extruder fan wire pair	        70cm	
+X end stop wire pair	        25cm	
+Y end stop wire pair	        50cm	
+Z end stop wire pair	        25cm	
+X motor wires (4)	        25cm	motors may be pre-wired in which case you can ignore these probably
+Y motor wires (4)	        50cm	''
+Z left motor wires (4)	        25cm	''
+Z right motor wires (4)	        60cm	''
+Extruder motor wires (4)	70cm	
+Heat bed power wires	        60cm	12 Gauge or heavier
+Heat bed thermistor wires	50cm	
