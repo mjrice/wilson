@@ -66,11 +66,12 @@ x_end_plain();
 
 
 module pushfit_rod(diameter,length){
- cylinder(h = length, r=diameter/2, $fn=30);
- difference(){
- 	translate(v=[0,-diameter/2.85,length/2]) rotate([0,0,45]) cube(size = [diameter/2,diameter/2,length], center = true);
- 	translate(v=[0,-diameter/4-diameter/2-0.4,length/2]) rotate([0,0,0]) cube(size = [diameter,diameter/2,length], center = true);
- }
- //translate(v=[0,-diameter/2-2,length/2]) cube(size = [diameter,1,length], center = true);
+ translate([0,-0.3,0])  cylinder(h = length, r=diameter/2, $fn=30);
+ translate([0,0.3,0])  cylinder(h = length, r=diameter/2, $fn=30);
+// difference(){
+// 	translate(v=[0,-diameter/2.85,length/2]) rotate([0,0,45]) cube(size = [diameter/2,diameter/2,length], center = true);
+// 	translate(v=[0,-diameter/4-diameter/2-0.4,length/2]) rotate([0,0,0]) cube(size = [diameter,diameter/2,length], center = true);
+// }
+ 
 }
 
