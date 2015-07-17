@@ -17,6 +17,9 @@ screwhole_inside = false;
 screwhole_outside_openside = true; // The side the chain comes out
 screwhole_outside_closedside = true; // The opposite side
 
+// Should the end facing the front of the printer be hollow?
+hollow_end = true;
+
 // End of settings
 
 chain_width = 21;
@@ -54,7 +57,7 @@ difference()
 
             // Hollow out the cube for wires to pass through
             translate([wall_width, -2, wall_width])
-            #cube([bar_width-wall_width*2, bar_length+4, internal_height]);
+            #cube([bar_width-wall_width*2, bar_length+(hollow_end ? 4 : 0), internal_height]);
 
             translate([-4, bar_length-chain_width+3.5, 2])
             #cube([10, chain_hole_width, internal_height]);
